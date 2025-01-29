@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report a Disaster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Report a Disaster</h2>
+    <form action="#">
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="disaster">Type of Disaster:</label>
+      <select id="disaster" name="disaster" required>
+        <option value="earthquake">Earthquake</option>
+        <option value="flood">Flood</option>
+        <option value="fire">Fire</option>
+        <option value="cyclone">Cyclone</option>
+        <option value="tsunami">Tsunami</option>
+      </select>
+
+      <label for="details">Details:</label>
+      <textarea id="details" name="details" rows="5" required></textarea>
+
+      <button type="submit" class="btn">Submit Report</button>
+    </form>
+  </div>
+</body>
+</html>
